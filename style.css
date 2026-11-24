@@ -13,3 +13,16 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 .hero-actions{flex-wrap:wrap;gap:12px}.button-secondary{background:transparent;color:var(--green);border:1px solid #b6ff5c66}.button-secondary:hover{background:#b6ff5c12;color:var(--green)}
+
+/* Vector icons and interaction polish */
+.game-symbol svg{display:block;width:48px;height:48px}
+.feature-icon svg{display:block;width:32px;height:32px}
+.game-symbol svg,.feature-icon svg{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.game-card{transition:border-color .25s ease,transform .25s ease,box-shadow .25s ease}
+.game-card:hover{transform:translateY(-5px);box-shadow:0 12px 32px #b6ff5c1f,0 0 18px #b6ff5c0d}
+.button,.header nav .nav-cta,.menu-toggle{transition:color .25s ease,background-color .25s ease,border-color .25s ease,box-shadow .25s ease,transform .25s ease}
+.hero-actions .button:not(.button-secondary):hover{background:#caff8d;box-shadow:0 0 24px #b6ff5c55,0 8px 32px #b6ff5c33}
+.header nav .nav-cta:hover{box-shadow:0 0 18px #b6ff5c22}
+.game-card p,.feature-card p{line-height:1.5}
+.section-note,.access-footnote,.footer p,.footer-socials small,.legal{color:#999}
+@media(max-width:760px){.game-symbol svg{width:40px;height:40px}}
