@@ -26,3 +26,14 @@
 .game-card p,.feature-card p{line-height:1.5}
 .section-note,.access-footnote,.footer p,.footer-socials small,.legal{color:#999}
 @media(max-width:760px){.game-symbol svg{width:40px;height:40px}}
+/* Terminal motion and depth */
+.hero-copy{position:relative}
+.hero-copy::before{content:"";position:absolute;z-index:-1;width:480px;height:360px;top:-110px;left:-130px;background:radial-gradient(ellipse,#b6ff5c14,transparent 68%);filter:blur(12px);animation:ambient-pulse 8s ease-in-out infinite}
+.typewriter-cursor{animation:cursor-blink .85s steps(1) infinite}
+.visual::before{content:"";position:absolute;inset:8% 4%;background:radial-gradient(ellipse,#b6ff5c18,transparent 65%);filter:blur(22px);animation:ambient-pulse 9s ease-in-out infinite}
+.software-card{backdrop-filter:blur(12px);border-color:#b6ff5c3a;box-shadow:0 30px 90px #0008,0 0 36px #b6ff5c1c}
+.reveal-item{opacity:0;transform:translateY(30px);transition:opacity .65s ease var(--reveal-delay),transform .65s ease var(--reveal-delay)}
+.reveal-item.is-visible{opacity:1;transform:translateY(0)}
+@keyframes cursor-blink{0%,45%{opacity:1}46%,100%{opacity:0}}
+@keyframes ambient-pulse{0%,100%{opacity:.55;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}
+@media(prefers-reduced-motion:reduce){.reveal-item{opacity:1;transform:none;transition:none}.typewriter-cursor{animation:none}.hero-copy::before,.visual::before{animation:none}}

@@ -1,5 +1,34 @@
 "use strict";
 
+function startTypewriter(element, text, delay = 42) {
+  let index = 0;
+  element.textContent = "";
+  const typeNext = () => {
+    if (index < text.length) {
+      element.textContent += text[index++];
+      window.setTimeout(typeNext, delay);
+    }
+  };
+  typeNext();
+}
+const typewriter = document.querySelector(".typewriter-text");
+if (typewriter) startTypewriter(typewriter, typewriter.textContent.trim());
+
+const revealItems = document.querySelectorAll(".game-card, .feature-card");
+revealItems.forEach((item, index) => {
+  item.style.setProperty("--reveal-delay", `${(index % 6 + 1) * 0.1}s`);
+  item.classList.add("reveal-item");
+});
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.14 });
+revealItems.forEach((item) => revealObserver.observe(item));
+
 const menuButton = document.querySelector(".menu-toggle");
 const navigation = document.querySelector("#navigation");
 
