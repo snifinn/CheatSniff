@@ -3,19 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Мой первый сайт, созданный вместе с Codex.">
-  <meta name="theme-color" content="#101411">
-  <title>Мой сайт на Codex</title>
+  <meta name="description" content="CheatSniff — агрегатор и поисковик существующих читов для игр. Большая база, быстрый поиск, проверенные файлы и 14 дней бесплатного доступа.">
+  <meta name="theme-color" content="#090c0b">
+  <title>CheatSniff — база читов и быстрый поиск</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="hero">
-    <span class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Маленькая идея. Большое начало.</span>
-    <h1>Мой сайт<br>на <span>Codex</span></h1>
-    <p>Здесь идеи становятся реальностью.<br>Добро пожаловать в моё новое пространство в интернете.</p>
-    <button id="hello-button" type="button">Сказать привет <span aria-hidden="true">↗</span></button>
-    <div class="signature">Создано с любопытством <span aria-hidden="true">✳</span> и Codex</div>
+  <header class="header">
+    <a class="brand" href="#" aria-label="CheatSniff — на главную"><span class="brand-icon" aria-hidden="true">⌘</span>Cheat<span>Sniff</span><span class="brand-dot">®</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Открыть меню">☰</button>
+    <nav id="navigation" aria-label="Основная навигация">
+      <a href="#games">Каталог игр</a><a href="#features">Преимущества базы</a><a class="nav-cta" href="#access">Получить доступ <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> АГРЕГАТОР ЧИТОВ / ВСЁ В ОДНОМ МЕСТЕ</div>
+        <h1>Меньше поисков.<br>Больше выбора.<br><span>Это CheatSniff.</span></h1>
+        <p>Я собираю существующие читы в одном каталоге, чтобы тебе не пришлось искать их по десяткам сайтов. CheatSniff — мой агрегатор и поисковик с самой большой базой, быстрым поиском и антивирусной проверкой файлов.</p>
+        <div class="hero-actions"><a class="button button-secondary" href="#">Пробный период 14 дней</a><a class="button" href="#">Купить / Приобрести <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-note"><span class="live-dot"></span> Существующие читы. Единая база. Проверенные файлы.</div>
+      </div>
+      <div class="visual" aria-label="Иллюстрация интерфейса CheatSniff">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-tag tag-top"><span class="live-dot"></span> SEARCH / DISCOVER / COMPARE</div>
+        <div class="software-card">
+          <div class="window-bar"><span class="window-dots">● ● ●</span><span>cheatsniff / preview</span><span>↗</span></div>
+          <div class="software-body"><div class="app-sidebar" aria-hidden="true"><b>⌘</b><span class="selected">◈</span><span>⌁</span><span>⚙</span></div>
+          <div class="app-content"><div class="mini-label">CHEATSNIFF DATABASE</div><h2>Найди то, что ищешь<span>.</span></h2><p>Поиск по играм и собранным базам.</p>
+          <div class="config-row"><span><i>◈</i> Единый каталог читов</span><span class="toggle"></span></div>
+          <div class="config-row"><span><i>⌁</i> Быстрый поиск по базе</span><span class="toggle"></span></div>
+          <div class="config-row"><span><i>◉</i> Антивирусная проверка</span><span class="toggle"></span></div>
+          <div class="config-footer"><span>CATALOG_01</span><span>SEARCH READY <b>●</b></span></div></div></div>
+        </div>
+        <div class="floating-tag tag-bottom"><span class="crosshair">✳</span><div>Меньше вкладок в браузере.<br><strong>Все находки в одном месте.</strong></div></div>
+        <span class="visual-caption">КОНЦЕПТ ИНТЕРФЕЙСА ПОИСКОВИКА</span>
+      </div>
+    </section>
+    <section id="games" class="section container">
+      <div class="section-heading"><div><div class="eyebrow">01 / КАТАЛОГ ПО ИГРАМ</div><h2>Твоя игра уже в каталоге.</h2></div><p>Я собираю существующие решения по играм.<br>Выбери раздел и переходи к поиску.</p></div>
+      <div class="games-grid">
+        <article class="game-card"><div class="game-symbol">◈</div><span class="game-genre">PRECISION PLATFORMER</span><h3>DDnet</h3><p>Собранные читы для DDnet.</p></article>
+        <article class="game-card"><div class="game-symbol">⌖</div><span class="game-genre">TACTICAL SHOOTER</span><h3>Counter-Strike 2</h3><p>Каталог существующих читов для CS2.</p></article>
+        <article class="game-card"><div class="game-symbol">▧</div><span class="game-genre">SANDBOX</span><h3>Minecraft</h3><p>Поиск читов для Minecraft.</p></article>
+        <article class="game-card"><div class="game-symbol">⋁</div><span class="game-genre">TACTICAL SHOOTER</span><h3>Valorant</h3><p>Подборка решений для Valorant.</p></article>
+        <article class="game-card"><div class="game-symbol">◩</div><span class="game-genre">MOBA</span><h3>Dota 2</h3><p>База читов для Dota 2.</p></article>
+        <article class="game-card"><div class="game-symbol">◇</div><span class="game-genre">CREATIVE PLATFORM</span><h3>Roblox</h3><p>Собранные решения для Roblox.</p></article>
+      </div>
+      <p class="section-note">Я собираю и систематизирую сторонние разработки. Доступность конкретных файлов зависит от актуального наполнения каталога.</p>
+    </section>
+    <section id="features" class="section container">
+      <div class="section-heading"><div><div class="eyebrow">02 / ПОЧЕМУ CHEATSNIFF</div><h2>Вся база. Один поиск.</h2></div><p>Собрал удобный поиск для себя и друзей.<br>Теперь открываю доступ к базе для тебя.</p></div>
+      <div class="features-grid">
+        <article class="feature-card"><span class="feature-number">01 /</span><h3>Самая большая база</h3><p>Я собираю существующие читы из разных источников и раскладываю их по играм. Всё в одном месте, без бесконечных переходов между сайтами.</p><span class="feature-icon" aria-hidden="true">◫</span></article>
+        <article class="feature-card"><span class="feature-number">02 /</span><h3>Быстрый поиск</h3><p>Выбери игру и найди нужное в общей базе. Моя задача — сократить путь от запроса до подходящего файла.</p><span class="feature-icon" aria-hidden="true">⌕</span></article>
+        <article class="feature-card"><span class="feature-number">03 /</span><h3>Антивирусная проверка всех баз</h3><p>Проверяю все добавляемые базы и файлы антивирусом. Защита от вирусов и проверенные файлы — обязательная часть отбора в каталог.</p><span class="feature-icon" aria-hidden="true">◈</span></article>
+        <article class="feature-card"><span class="feature-number">04 /</span><h3>14 дней бесплатного доступа</h3><p>Пробный период — 14 дней. Знакомься с поисковиком и базой, оцени удобство, а потом решай, нужен ли тебе платный доступ.</p><span class="feature-icon" aria-hidden="true">↗</span></article>
+      </div>
+      <p class="section-note">Антивирусная проверка помогает снизить риск заражения, но не гарантирует абсолютную безопасность файлов. Результаты проверки не означают защиту от блокировок в играх.</p>
+    </section>
+<section id="access" class="container access-section"><div class="access-panel"><div class="eyebrow">НАЧНИ С ПОИСКА</div><h2>Твоя находка <span>уже ближе.</span></h2><p>Выбери игру, чтобы начать знакомство с каталогом. Первые 14 дней — бесплатно.</p><div class="access-actions"><label class="sr-only" for="game-select">Выберите игру</label><select id="game-select"><option>DDnet</option><option>Counter-Strike 2</option><option>Minecraft</option><option>Valorant</option><option>Dota 2</option><option>Roblox</option></select><button class="button" id="access-button" type="button">Получить доступ <span aria-hidden="true">↗</span></button></div><p class="access-message" id="access-message" role="status" hidden></p><span class="access-footnote">Доступ к поисковику и базе сторонних читов. Условия подписки — перед покупкой.</span></div></section>
   </main>
+  <footer class="container footer"><div><a class="brand" href="#">Cheat<span>Sniff</span></a><p>Агрегатор читов. Один поиск вместо десятков сайтов.</p></div><div class="footer-socials"><a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram ↗</a><a href="https://discord.com/" target="_blank" rel="noopener noreferrer">Discord ↗</a><small>Профили проекта пока не подключены.</small></div><div class="legal">© <span id="year">2026</span> CheatSniff. Все права защищены.<p>Независимый каталог сторонних разработок, не связанный с издателями игр.<br>Использование читов может нарушать правила игр и привести к блокировке аккаунта.</p></div></footer>
 </body>
 </html>
